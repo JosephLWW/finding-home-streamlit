@@ -9,13 +9,13 @@ Contributors: Kayoon Kim, Jenny Lang, Joseph Wan Wang, Ashutosh Jha
 
 import streamlit as st
 import pandas as pd
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 import plotly.express as px
 import numpy as np
-from tueplots import bundles
-from tueplots.constants.color import rgb
+#from tueplots import bundles
+#from tueplots.constants.color import rgb
 
-plt.rcParams.update(bundles.beamer_moml())
+#plt.rcParams.update(bundles.beamer_moml())
 
 st.set_page_config(
     page_title="Finding Your Best City",
