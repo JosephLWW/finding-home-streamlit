@@ -71,7 +71,7 @@ wht_dict = {"wt_mean_tmp":avg_temp_w,"wt_std_dev":std_temp_w,"wt_cost_living":co
 
 # ---------------------------------------------------------------------------------------
 # Get Data
-all_data_df = pd.read_csv('all-data-best-city.csv')
+all_data_df = pd.read_csv('../all-data-best-city.csv')
 if "Unnamed: 0" in list(all_data_df.columns):
     all_data_df = all_data_df.drop(['Unnamed: 0'], axis=1)
 #print(list(all_data_df.columns))
