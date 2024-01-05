@@ -56,8 +56,13 @@ std_temp_w = st.sidebar.slider("How important is the above temperature variance 
         0, 5, 2, help="(0 - Not at all, 1 - Most important)")
 cost_living_w = st.sidebar.slider("How important is low Cost of Living?", 
         0, 5, 2, help="(0 - Not at all, 1 - Most important)")
-purchase_pow_w = st.sidebar.slider("How important is high Purchasing Power of the city currency?",
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+purchase_pow_w = st.sidebar.slider("How important is high Purchasing Power of the city's currency?",
+        0, 5, 2, help="(0 - Not at all, 1 - Most important) Purchasing power \
+                of a currency implies how much one can buy with one unit of \
+                that currency, e.g. The purchasing power of USD and EUR is \
+                almost same, but Japanese YEN is weaker than these two, \
+                meaning once can purchase less from a unit of japanese \
+                YEN than they can with EURO or USD.")
 safety_w = st.sidebar.slider("How important is high standards of Safety?", 
         0, 5, 2, help="(0 - Not at all, 1 - Most important)")
 pollution_w = st.sidebar.slider("How important is low levels of Pollution?", 
