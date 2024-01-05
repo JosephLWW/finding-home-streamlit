@@ -51,24 +51,24 @@ std_dev_temp_user = st.sidebar.slider("What is an acceptable range variance from
 # matter?
 
 avg_temp_w = st.sidebar.slider("How important is the above average temperature for you?",
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+        0, 5, 2, help="(0 - Not at all, 5 - Most important)")
 std_temp_w = st.sidebar.slider("How important is the above temperature variance range for you?",
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+        0, 5, 2, help="(0 - Not at all, 5 - Most important)")
 cost_living_w = st.sidebar.slider("How important is low Cost of Living?", 
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+        0, 5, 2, help="(0 - Not at all, 5 - Most important)")
 purchase_pow_w = st.sidebar.slider("How important is high Purchasing Power of the city's currency?",
-        0, 5, 2, help="(0 - Not at all, 1 - Most important) Purchasing power \
+        0, 5, 2, help="(0 - Not at all, 5 - Most important) Purchasing power \
                 of a currency implies how much one can buy with one unit of \
                 that currency, e.g. The purchasing power of USD and EUR is \
                 almost same, but Japanese YEN is weaker than these two, \
                 meaning once can purchase less from a unit of japanese \
                 YEN than they can with EURO or USD.")
 safety_w = st.sidebar.slider("How important is high standards of Safety?", 
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+        0, 5, 2, help="(0 - Not at all, 5 - Most important)")
 pollution_w = st.sidebar.slider("How important is low levels of Pollution?", 
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+        0, 5, 2, help="(0 - Not at all, 5 - Most important)")
 traffic_w = st.sidebar.slider("How important is low traffic wait times?", 
-        0, 5, 2, help="(0 - Not at all, 1 - Most important)")
+        0, 5, 2, help="(0 - Not at all, 5 - Most important)")
 
 wht_dict = {"wt_mean_tmp":avg_temp_w,"wt_std_dev":std_temp_w,"wt_cost_living":cost_living_w,
         "wt_purchase_pow":purchase_pow_w,"wt_safety":safety_w,"wt_pollution":pollution_w,
