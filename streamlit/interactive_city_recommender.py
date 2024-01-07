@@ -184,7 +184,8 @@ fig.update_layout(
     title_text = 'Top 10 Cities For the Parameters Set By You.',
     geo = dict(
         scope='world',
-        projection_type='equirectangular',
+        #projection_type='equirectangular',
+        projection_type='natural earth',
         showland = True,
         landcolor = "rgb(250, 250, 250)",
         countrycolor = "rgb(200, 200, 200)",
