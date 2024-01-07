@@ -177,7 +177,8 @@ fig.update_geos(
     showland=True, landcolor="Brown",
     showocean=True, oceancolor="Azure",
     showlakes=True, lakecolor="LightBlue",
-    showrivers=True, rivercolor="LightBlue"
+    showrivers=True, rivercolor="LightBlue",
+    bgcolor = 'black'
 )
 
 fig.update_layout(
