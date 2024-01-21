@@ -53,7 +53,7 @@ std_dev_temp_w = st.sidebar.slider("What is an acceptable range variance from ab
 # Markdown - Quick text explainer on what the scales below mean.
 st.sidebar.markdown(
 """
-For the below features, indicate from 0 to 1, worst to best, how high would you
+For the scales below, indicate from 0.0 - 1.0 (worst to best), how high would you
 want your ideal city to score. This could be based on how impotant the feature
 in question is for you.
 """
