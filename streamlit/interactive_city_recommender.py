@@ -128,7 +128,7 @@ def rank_eval(all_data_df, train_df_pca, wht_dict):
 
     scaled_best_mean_tmp = ( (scaled_best_mean_tmp - all_data_df['scaled_mean_tmp'].mean()) /
                                            all_data_df['scaled_mean_tmp'].std() )
-    sclaed_best_std_dev_tmp = ( (sclaed_best_std_dev_tmp - all_data_df['scaled_tmp_std_dev'].mean()) /
+    scaled_best_std_dev_tmp = ( (scaled_best_std_dev_tmp - all_data_df['scaled_tmp_std_dev'].mean()) /
                                            all_data_df['scaled_tmp_std_dev'].std() )
 
     new_point = np.array([[wht_dict['wt_cost_living'],wht_dict['wt_purchase_pow'],
