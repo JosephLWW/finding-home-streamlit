@@ -260,7 +260,7 @@ trace1 = go.Scatter3d(
     mode='markers',
     marker=dict(
         size=6,
-        color='white',                # set color to white
+        color='green',                # set color to white
         opacity=0.5                   # set opacity to make points faint
     ),
     text=train_df_pca['city_ascii'],  # add labels
