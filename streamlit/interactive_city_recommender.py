@@ -53,36 +53,36 @@ std_dev_temp_w = st.sidebar.slider("What is an acceptable range variance from ab
 # Markdown - Quick text explainer on what the scales below mean.
 st.sidebar.markdown(
 """
-Please rate below as 0.0 - Totally disagree/Worst and 1.0 - Totally agree/Best.
+Please rate below as 0 - Totally disagree/Worst and 1 - Totally agree/Best.
 """
 )
 
-cost_living_w = st.sidebar.slider("I want my city to be relatively affordable?", 
+cost_living_w = st.sidebar.slider("I want my city to be relatively affordable.", 
         0.0, 1.0, 0.5, help="The cost of living \
                 index, includes general cost of living including rent! A low \
-                score means, the city is less affordable, while a high score \
+                score means the city is less affordable, while a high score \
                 means the city is more affordable. ")
 purchase_pow_w = st.sidebar.slider("I would like my city's currency to have \
-        a high purchasing power?",
+        a high purchasing power.",
         0.0, 1.0, 0.5, help="Purchasing power \
                 of a currency implies how much one can buy with one unit of \
-                that currency, e.g. The purchasing power of USD and EUR is \
+                that currency, e.g. the purchasing power of USD and EUR is \
                 almost same, but Japanese YEN is weaker than these two, \
                 meaning once can purchase less from a unit of japanese \
-                YEN than they can with EURO or USD. A high score mean high \
+                YEN than they can with EURO or USD. A high score means high \
                 purchasing power, while a low score means low purchasing \
                 power.")
-safety_w = st.sidebar.slider("I want my city to be relatively safe?", 
+safety_w = st.sidebar.slider("I want my city to be relatively safe.", 
         0.0, 1.0, 0.5, help="A low score means low \
                 standards of safety, and a high score means a high standard \
                 of safety.")
-pollution_w = st.sidebar.slider("I want my city to be less polluted?", 
+pollution_w = st.sidebar.slider("I want my city to be less polluted.", 
         0.0, 1.0, 0.5, help="A low score means worse \
                 pollution, while a high score means better pollution control.")
-traffic_w = st.sidebar.slider("I don't want to be stuck in traffic for a long time?", 
-        0.0, 1.0, 0.5, help="A low score mean worst \
+traffic_w = st.sidebar.slider("I don't want to be stuck in traffic for a long time.", 
+        0.0, 1.0, 0.5, help="A low score means worst \
                 traffic wait times, while a higher score indicates better \
-                traffi conditions.")
+                traffic conditions.")
 
 wht_dict = {"wt_mean_temp":avg_temp_w,"wt_std_dev":std_dev_temp_w,"wt_cost_living":cost_living_w,
         "wt_purchase_pow":purchase_pow_w,"wt_safety":safety_w,"wt_pollution":pollution_w,
