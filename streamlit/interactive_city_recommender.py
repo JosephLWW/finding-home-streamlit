@@ -121,6 +121,11 @@ def rank_eval(all_data_df, train_df_pca, wht_dict):
     scaled_best_std_dev_tmp = (wht_dict['wt_std_dev'] - all_data_df['std_dev_temp'].min()) / std_dev_temp_range
 
     # Normalize the new point
+    all_data_df['scaled_mean_tmp'] = ( (all_data_df['mean_tmp'] - all_data_df['mean_tmp'].min()) /
+                                           (all_data_df['mean_tmp'].max() - all_data_df['mean_tmp'].min()) )
+    all_data_df['scaled_tmp_std_dev'] = ( (all_data_df['std_dev_temp'] - all_data_df['std_dev_temp'].min()) /
+                                           (all_data_df['std_dev_temp'].max() - all_data_df['std_dev_temp'].min()) )
+
     scaled_best_mean_tmp = ( (scaled_best_mean_tmp - all_data_df['scaled_mean_tmp'].mean()) /
                                            all_data_df['scaled_mean_tmp'].std() )
     sclaed_best_std_dev_tmp = ( (sclaed_best_std_dev_tmp - all_data_df['scaled_tmp_std_dev'].mean()) /
