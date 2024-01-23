@@ -225,7 +225,7 @@ fig = go.Figure(data=go.Scattergeo(
         ),
         color = finding_home_top_df['Rank'],  # Use 'city_id' for color
         colorscale = 'Viridis',  # Use a predefined colorscale
-        colorbar_title="Cities"
+        colorbar_title="City Rank Scale (1 -10)"
     )))
 
 
@@ -275,7 +275,7 @@ trace1 = go.Scatter3d(
     ),
     text=train_df_pca['city_ascii'],  # add labels
     hoverinfo='text',
-    name='Dataset Cities'
+    name='Real Cities in the Dataset.'
 )
 
 # Create a trace for the new point
@@ -288,7 +288,7 @@ trace2 = go.Scatter3d(
         size=10,
         color='red',                 # set color to red
     ),
-    name='Ideal City'
+    name='Ideal City (Based on Parameters Set on the Left Drawer.)'
 )
 
 # Define the layout
