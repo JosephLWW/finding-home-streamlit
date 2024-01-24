@@ -27,7 +27,8 @@ st.set_page_config(
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
-    menu_items={"About": "(c) Ashutosh Jha, 2023"},
+    menu_items={"About": "(c) Project Title: Finding Home: Which is the best \
+            city? Contributors: Kayoon Kim, Jenny Lang, Joseph Wan Wang, Ashutosh Jha, 2023"},
 )
 
 st.sidebar.title("What is important for your best city?")
@@ -288,6 +289,7 @@ trace2 = go.Scatter3d(
         size=10,
         color='red',                 # set color to red
     ),
+    text="Your Ideal City!"
     name='Ideal City (Based on Parameters Set on the Left Drawer.)'
 )
 
