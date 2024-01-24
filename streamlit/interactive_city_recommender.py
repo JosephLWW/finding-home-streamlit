@@ -289,7 +289,7 @@ trace2 = go.Scatter3d(
         size=10,
         color='red',                 # set color to red
     ),
-    text="Your Ideal City!"
+    text="Your Ideal City!",
     name='Ideal City (Based on Parameters Set on the Left Drawer.)'
 )
 
