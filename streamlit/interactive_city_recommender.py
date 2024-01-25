@@ -237,8 +237,7 @@ fig.update_geos(
     showland=True, landcolor="Brown",
     showocean=True, oceancolor="Azure",
     showlakes=True, lakecolor="LightBlue",
-    showrivers=True, rivercolor="LightBlue",
-    bgcolor = 'black'
+    showrivers=True, rivercolor="LightBlue"
 )
 
 fig.update_layout(
@@ -246,7 +245,7 @@ fig.update_layout(
     geo = dict(
         scope='world',
         #projection_type='equirectangular',
-        projection_type='natural earth',
+        projection_type='equirectangular',
         showland = True,
         landcolor = "rgb(250, 250, 250)",
         countrycolor = "rgb(200, 200, 200)",
